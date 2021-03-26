@@ -6176,3 +6176,30 @@ Processing by StreetsController#index as HTML
 Completed 200 OK in 135ms (Views: 107.0ms | ActiveRecord: 21.8ms | Allocations: 101154)
 
 
+Started GET "/streets?q%5BdictionaryName_or_shortName_cont%5D=&commit=Search" for ::1 at 2021-03-26 18:52:04 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"dictionaryName_or_shortName_cont"=>""}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (19.3ms)[0m  [1m[34mSELECT "streets".* FROM "streets"[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 92.2ms | Allocations: 84786)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 121.9ms | Allocations: 98380)
+Completed 200 OK in 131ms (Views: 100.6ms | ActiveRecord: 23.7ms | Allocations: 101634)
+
+
+Started GET "/streets?q%5BstreetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont%5D=%D0%B0%D0%B3%D0%B0%D0%B1%D0%B5%D0%BA&commit=Search" for ::1 at 2021-03-26 18:52:16 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"streetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont"=>"агабек"}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (12.7ms)[0m  [1m[34mSELECT "streets".* FROM "streets" WHERE ((((((((((((((("streets"."streetType" ILIKE '%агабек%' OR "streets"."dictionaryName" ILIKE '%агабек%') OR "streets"."shortName" ILIKE '%агабек%') OR "streets"."rank" ILIKE '%агабек%') OR "streets"."fname" ILIKE '%агабек%') OR "streets"."sname" ILIKE '%агабек%') OR "streets"."other" ILIKE '%агабек%') OR "streets"."label" ILIKE '%агабек%') OR "streets"."wiki" ILIKE '%агабек%') OR "streets"."city" ILIKE '%агабек%') OR "streets"."grount" ILIKE '%агабек%') OR "streets"."comment" ILIKE '%агабек%') OR "streets"."englishGoogleGeocoding" ILIKE '%агабек%') OR "streets"."englishTranslit" ILIKE '%агабек%') OR "streets"."englishGiz" ILIKE '%агабек%') OR "streets"."russianOsm" ILIKE '%агабек%')[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 2000)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 8283)
+Completed 200 OK in 25ms (Views: 8.7ms | ActiveRecord: 12.7ms | Allocations: 10197)
+
+
