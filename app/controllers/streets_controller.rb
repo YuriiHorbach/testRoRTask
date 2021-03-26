@@ -1,6 +1,8 @@
 class StreetsController < ApplicationController
 
   def index
-    @streets = Street.all
+    @q = Street.ransack(params[:q])
+    @streets = @q.result
   end
 end
+

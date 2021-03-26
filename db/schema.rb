@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_25_180829) do
+ActiveRecord::Schema.define(version: 2021_03_26_133942) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 2021_03_25_180829) do
   create_table "streets", force: :cascade do |t|
     t.integer "num"
     t.integer "scode"
-    t.string "street_type"
-    t.string "dictionary_name"
-    t.string "short_name"
+    t.string "streetType"
+    t.string "dictionaryName"
+    t.string "shortName"
     t.string "rank"
     t.string "fname"
     t.string "sname"
@@ -30,10 +30,10 @@ ActiveRecord::Schema.define(version: 2021_03_25_180829) do
     t.string "city"
     t.text "grount"
     t.text "comment"
-    t.string "english_google_geocoding"
-    t.string "english_translit"
-    t.string "english_giz"
-    t.string "russian_osm"
+    t.string "englishGoogleGeocoding"
+    t.string "englishTranslit"
+    t.string "englishGiz"
+    t.string "russianOsm"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
