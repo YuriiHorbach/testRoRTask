@@ -5969,3 +5969,210 @@ HINT:  No operator matches the given name and argument types. You might need to 
     37:               <td><%= street.scode %></td>
   
 app/views/streets/index.html.erb:34
+Started GET "/" for ::1 at 2021-03-26 18:19:26 +0200
+  [1m[35m (35.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant StreetController
+Did you mean?  StreetsController
+               AbstractController):
+  
+Started GET "/" for ::1 at 2021-03-26 18:19:47 +0200
+Processing by StreetsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (39.3ms)[0m  [1m[34mSELECT "streets".* FROM "streets"[0m
+  ↳ app/views/streets/index.html.erb:34
+  Rendered streets/index.html.erb within layouts/application (Duration: 217.7ms | Allocations: 84264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 354.6ms | Allocations: 97854)
+Completed 200 OK in 399ms (Views: 265.7ms | ActiveRecord: 109.1ms | Allocations: 100624)
+
+
+Started GET "/streets?q%5BdictionaryName_cont%5D=%D0%B0%D0%B2%D1%96%D0%B0&commit=Search" for ::1 at 2021-03-26 18:20:57 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"dictionaryName_cont"=>"авіа"}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (2.2ms)[0m  [1m[34mSELECT "streets".* FROM "streets" WHERE "streets"."dictionaryName" ILIKE '%авіа%'[0m
+  ↳ app/views/streets/index.html.erb:34
+  Rendered streets/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 9638)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 15912)
+Completed 200 OK in 26ms (Views: 17.0ms | ActiveRecord: 5.9ms | Allocations: 18635)
+
+
+Started GET "/streets?q%5BdictionaryName_cont%5D=%D0%B0%D0%B2%D1%96%D0%B0&commit=Search" for ::1 at 2021-03-26 18:36:11 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"dictionaryName_cont"=>"авіа"}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (2.2ms)[0m  [1m[34mSELECT "streets".* FROM "streets" WHERE "streets"."dictionaryName" ILIKE '%авіа%'[0m
+  ↳ app/views/streets/index.html.erb:34
+  Rendered streets/index.html.erb within layouts/application (Duration: 33.3ms | Allocations: 20643)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 34232)
+Completed 200 OK in 68ms (Views: 48.1ms | ActiveRecord: 8.3ms | Allocations: 39324)
+
+
+Started GET "/streets?q%5BdictionaryName_cont%5D=&commit=Search" for ::1 at 2021-03-26 18:36:14 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"dictionaryName_cont"=>""}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (2.2ms)[0m  [1m[34mSELECT "streets".* FROM "streets"[0m
+  ↳ app/views/streets/index.html.erb:34
+  Rendered streets/index.html.erb within layouts/application (Duration: 61.5ms | Allocations: 63223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.4ms | Allocations: 69606)
+Completed 200 OK in 69ms (Views: 65.6ms | ActiveRecord: 2.2ms | Allocations: 70220)
+
+
+Started GET "/streets?q%5BdictionaryName_cont%5D=1002&commit=Search" for ::1 at 2021-03-26 18:36:19 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"dictionaryName_cont"=>"1002"}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (2.0ms)[0m  [1m[34mSELECT "streets".* FROM "streets" WHERE "streets"."dictionaryName" ILIKE '%1002%'[0m
+  ↳ app/views/streets/index.html.erb:34
+  Rendered streets/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1321)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 7702)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 2.0ms | Allocations: 8421)
+
+
+Started GET "/streets?q%5BdictionaryName_cont%5D=&commit=Search" for ::1 at 2021-03-26 18:36:24 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"dictionaryName_cont"=>""}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (2.4ms)[0m  [1m[34mSELECT "streets".* FROM "streets"[0m
+  ↳ app/views/streets/index.html.erb:34
+  Rendered streets/index.html.erb within layouts/application (Duration: 54.4ms | Allocations: 63205)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.1ms | Allocations: 69488)
+Completed 200 OK in 64ms (Views: 60.1ms | ActiveRecord: 2.4ms | Allocations: 70089)
+
+
+  [1m[36mStreet Load (14.3ms)[0m  [1m[34mSELECT "streets".* FROM "streets" ORDER BY "streets"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/streets?q%5BdictionaryName_cont%5D=%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%BF%D0%BE&commit=Search" for ::1 at 2021-03-26 18:43:22 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"dictionaryName_cont"=>"митропо"}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (2.5ms)[0m  [1m[34mSELECT "streets".* FROM "streets" WHERE "streets"."dictionaryName" ILIKE '%митропо%'[0m
+  ↳ app/views/streets/index.html.erb:34
+  Rendered streets/index.html.erb within layouts/application (Duration: 34.7ms | Allocations: 20737)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 34326)
+Completed 200 OK in 64ms (Views: 49.5ms | ActiveRecord: 6.6ms | Allocations: 39417)
+
+
+Started GET "/streets?q%5Bscode_or_dictionaryName_or_shortName_cont%5D=&commit=Search" for ::1 at 2021-03-26 18:43:32 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"scode_or_dictionaryName_or_shortName_cont"=>""}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (3.1ms)[0m  [1m[34mSELECT "streets".* FROM "streets"[0m
+  ↳ app/views/streets/index.html.erb:34
+  Rendered streets/index.html.erb within layouts/application (Duration: 61.2ms | Allocations: 63321)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.2ms | Allocations: 69704)
+Completed 200 OK in 69ms (Views: 64.7ms | ActiveRecord: 3.1ms | Allocations: 70318)
+
+
+Started GET "/streets?q%5Bscode_or_dictionaryName_or_shortName_cont%5D=700&commit=Search" for ::1 at 2021-03-26 18:43:43 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"scode_or_dictionaryName_or_shortName_cont"=>"700"}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (0.8ms)[0m  [1m[34mSELECT "streets".* FROM "streets" WHERE (("streets"."scode" ILIKE NULL OR "streets"."dictionaryName" ILIKE '%700%') OR "streets"."shortName" ILIKE '%700%')[0m
+  ↳ app/views/streets/index.html.erb:34
+  Rendered streets/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 7097)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 7161)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.8ms | Allocations: 8053)
+
+
+  
+ActionView::Template::Error (PG::UndefinedFunction: ERROR:  operator does not exist: integer ~~* unknown
+LINE 1: ...reets".* FROM "streets" WHERE (("streets"."scode" ILIKE NULL...
+                                                             ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+):
+    31:             </tr>
+    32:           </thead>
+    33:           <tbody>
+    34:             <% @streets.each do |street|%>
+    35:             <tr>
+    36:               <th scope="row"><%= street.num %></th>
+    37:               <td><%= street.scode %></td>
+  
+app/views/streets/index.html.erb:34
+Started GET "/streets?q%5Bscode_or_dictionaryName_or_shortName_cont%5D=&commit=Search" for ::1 at 2021-03-26 18:44:47 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"scode_or_dictionaryName_or_shortName_cont"=>""}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (3.5ms)[0m  [1m[34mSELECT "streets".* FROM "streets"[0m
+  ↳ app/views/streets/index.html.erb:34
+  Rendered streets/index.html.erb within layouts/application (Duration: 68.1ms | Allocations: 63484)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 76.9ms | Allocations: 69999)
+Completed 200 OK in 80ms (Views: 74.5ms | ActiveRecord: 3.5ms | Allocations: 70733)
+
+
+Started GET "/streets?q%5Bscode_or_dictionaryName_or_shortName_cont%5D=&commit=Search" for ::1 at 2021-03-26 18:45:12 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"scode_or_dictionaryName_or_shortName_cont"=>""}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (12.5ms)[0m  [1m[34mSELECT "streets".* FROM "streets"[0m
+  ↳ app/views/streets/index.html.erb:34
+  Rendered streets/index.html.erb within layouts/application (Duration: 82.8ms | Allocations: 84307)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 135.8ms | Allocations: 97901)
+Completed 200 OK in 145ms (Views: 121.9ms | ActiveRecord: 16.8ms | Allocations: 101155)
+
+
+Started GET "/streets?q%5BdictionaryName_or_shortName_cont%5D=700&commit=Search" for ::1 at 2021-03-26 18:45:15 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"dictionaryName_or_shortName_cont"=>"700"}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (2.8ms)[0m  [1m[34mSELECT "streets".* FROM "streets" WHERE ("streets"."dictionaryName" ILIKE '%700%' OR "streets"."shortName" ILIKE '%700%')[0m
+  ↳ app/views/streets/index.html.erb:34
+  Rendered streets/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1464)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 7749)
+Completed 200 OK in 15ms (Views: 9.5ms | ActiveRecord: 2.8ms | Allocations: 8619)
+
+
+Started GET "/streets?q%5BdictionaryName_or_shortName_cont%5D=&commit=Search" for ::1 at 2021-03-26 18:45:30 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"dictionaryName_or_shortName_cont"=>""}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (3.2ms)[0m  [1m[34mSELECT "streets".* FROM "streets"[0m
+  ↳ app/views/streets/index.html.erb:34
+  Rendered streets/index.html.erb within layouts/application (Duration: 51.6ms | Allocations: 63277)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 69562)
+Completed 200 OK in 60ms (Views: 54.7ms | ActiveRecord: 3.2ms | Allocations: 70173)
+
+
+Started GET "/streets?q%5BdictionaryName_or_shortName_cont%5D=&commit=Search" for ::1 at 2021-03-26 18:49:44 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"dictionaryName_or_shortName_cont"=>""}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (14.2ms)[0m  [1m[34mSELECT "streets".* FROM "streets"[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 99.9ms | Allocations: 84308)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 127.3ms | Allocations: 97900)
+Completed 200 OK in 135ms (Views: 107.0ms | ActiveRecord: 21.8ms | Allocations: 101154)
+
+

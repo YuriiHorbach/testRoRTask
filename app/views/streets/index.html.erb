@@ -4,7 +4,7 @@
       <%= search_form_for @q do |f| %>
 
       <%= f.label "Search on any parametr" %>
-      <%= f.search_field :dictionaryName_cont  %>
+      <%= f.search_field :dictionaryName_or_shortName_cont  %>
 
         <%= f.submit %>
       <% end %>
@@ -23,6 +23,7 @@
               <th scope="col">Other</th>
               <th scope="col">Label</th>
               <th scope="col">Wiki</th>
+              <th scope="col">City</th>
               <th scope="col">Comment</th>
               <th scope="col">English Google Geocoding</th>
               <th scope="col">English Translit</th>
