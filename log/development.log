@@ -6203,3 +6203,55 @@ Processing by StreetsController#index as HTML
 Completed 200 OK in 25ms (Views: 8.7ms | ActiveRecord: 12.7ms | Allocations: 10197)
 
 
+Started GET "/streets?q%5BstreetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont%5D=&commit=Search" for ::1 at 2021-03-26 18:54:47 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"streetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont"=>""}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (2.6ms)[0m  [1m[34mSELECT "streets".* FROM "streets"[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 49.9ms | Allocations: 63755)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.8ms | Allocations: 70040)
+Completed 200 OK in 58ms (Views: 53.8ms | ActiveRecord: 2.6ms | Allocations: 70652)
+
+
+Started GET "/streets?q%5BstreetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont%5D=ahab&commit=Search" for ::1 at 2021-03-26 18:55:03 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"streetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont"=>"ahab"}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (12.8ms)[0m  [1m[34mSELECT "streets".* FROM "streets" WHERE ((((((((((((((("streets"."streetType" ILIKE '%ahab%' OR "streets"."dictionaryName" ILIKE '%ahab%') OR "streets"."shortName" ILIKE '%ahab%') OR "streets"."rank" ILIKE '%ahab%') OR "streets"."fname" ILIKE '%ahab%') OR "streets"."sname" ILIKE '%ahab%') OR "streets"."other" ILIKE '%ahab%') OR "streets"."label" ILIKE '%ahab%') OR "streets"."wiki" ILIKE '%ahab%') OR "streets"."city" ILIKE '%ahab%') OR "streets"."grount" ILIKE '%ahab%') OR "streets"."comment" ILIKE '%ahab%') OR "streets"."englishGoogleGeocoding" ILIKE '%ahab%') OR "streets"."englishTranslit" ILIKE '%ahab%') OR "streets"."englishGiz" ILIKE '%ahab%') OR "streets"."russianOsm" ILIKE '%ahab%')[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 1964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 8249)
+Completed 200 OK in 25ms (Views: 9.1ms | ActiveRecord: 12.8ms | Allocations: 10143)
+
+
+Started GET "/streets?q%5BstreetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont%5D=23.03.2004&commit=Search" for ::1 at 2021-03-26 18:55:19 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"streetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont"=>"23.03.2004"}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (11.9ms)[0m  [1m[34mSELECT "streets".* FROM "streets" WHERE ((((((((((((((("streets"."streetType" ILIKE '%23\.03\.2004%' OR "streets"."dictionaryName" ILIKE '%23\.03\.2004%') OR "streets"."shortName" ILIKE '%23\.03\.2004%') OR "streets"."rank" ILIKE '%23\.03\.2004%') OR "streets"."fname" ILIKE '%23\.03\.2004%') OR "streets"."sname" ILIKE '%23\.03\.2004%') OR "streets"."other" ILIKE '%23\.03\.2004%') OR "streets"."label" ILIKE '%23\.03\.2004%') OR "streets"."wiki" ILIKE '%23\.03\.2004%') OR "streets"."city" ILIKE '%23\.03\.2004%') OR "streets"."grount" ILIKE '%23\.03\.2004%') OR "streets"."comment" ILIKE '%23\.03\.2004%') OR "streets"."englishGoogleGeocoding" ILIKE '%23\.03\.2004%') OR "streets"."englishTranslit" ILIKE '%23\.03\.2004%') OR "streets"."englishGiz" ILIKE '%23\.03\.2004%') OR "streets"."russianOsm" ILIKE '%23\.03\.2004%')[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 1915)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 8200)
+Completed 200 OK in 24ms (Views: 8.9ms | ActiveRecord: 11.9ms | Allocations: 10205)
+
+
+Started GET "/streets?q%5BstreetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont%5D=23.04.2004&commit=Search" for ::1 at 2021-03-26 18:55:23 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"streetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont"=>"23.04.2004"}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (10.8ms)[0m  [1m[34mSELECT "streets".* FROM "streets" WHERE ((((((((((((((("streets"."streetType" ILIKE '%23\.04\.2004%' OR "streets"."dictionaryName" ILIKE '%23\.04\.2004%') OR "streets"."shortName" ILIKE '%23\.04\.2004%') OR "streets"."rank" ILIKE '%23\.04\.2004%') OR "streets"."fname" ILIKE '%23\.04\.2004%') OR "streets"."sname" ILIKE '%23\.04\.2004%') OR "streets"."other" ILIKE '%23\.04\.2004%') OR "streets"."label" ILIKE '%23\.04\.2004%') OR "streets"."wiki" ILIKE '%23\.04\.2004%') OR "streets"."city" ILIKE '%23\.04\.2004%') OR "streets"."grount" ILIKE '%23\.04\.2004%') OR "streets"."comment" ILIKE '%23\.04\.2004%') OR "streets"."englishGoogleGeocoding" ILIKE '%23\.04\.2004%') OR "streets"."englishTranslit" ILIKE '%23\.04\.2004%') OR "streets"."englishGiz" ILIKE '%23\.04\.2004%') OR "streets"."russianOsm" ILIKE '%23\.04\.2004%')[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 63.1ms | Allocations: 61193)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.9ms | Allocations: 67575)
+Completed 200 OK in 72ms (Views: 58.5ms | ActiveRecord: 10.8ms | Allocations: 69570)
+
+
