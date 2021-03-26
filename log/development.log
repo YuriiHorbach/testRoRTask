@@ -6539,3 +6539,27 @@ Processing by StreetsController#index as HTML
 Completed 200 OK in 60ms (Views: 56.0ms | ActiveRecord: 2.4ms | Allocations: 76443)
 
 
+Started GET "/streets" for ::1 at 2021-03-26 19:10:07 +0200
+Processing by StreetsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (2.3ms)[0m  [1m[34mSELECT "streets".* FROM "streets"[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 48.5ms | Allocations: 68086)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.0ms | Allocations: 74369)
+Completed 200 OK in 57ms (Views: 53.2ms | ActiveRecord: 2.3ms | Allocations: 74933)
+
+
+Started GET "/streets" for ::1 at 2021-03-26 19:10:16 +0200
+Processing by StreetsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (9.4ms)[0m  [1m[34mSELECT "streets".* FROM "streets"[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 60.6ms | Allocations: 68078)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.7ms | Allocations: 74465)
+Completed 200 OK in 70ms (Views: 58.9ms | ActiveRecord: 9.4ms | Allocations: 75029)
+
+
