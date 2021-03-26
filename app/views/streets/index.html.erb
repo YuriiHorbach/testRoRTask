@@ -48,7 +48,7 @@
                 <%= if street.wiki == nil
                      ' '
                     else
-                      link_to "#{street.dictionaryName} посилання на Wiki", target: :_blank,  street.wiki
+                      link_to "#{street.dictionaryName} посилання на Wiki",   street.wiki, target: :_blank
                     end
                %> 
               </td>
