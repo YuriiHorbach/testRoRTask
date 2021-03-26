@@ -1,0 +1,48 @@
+
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">№</th>
+      <th scope="col">Scode</th>
+      <th scope="col">Type</th>
+      <th scope="col">DictionaryName</th>
+      <th scope="col">ShortName</th>
+      <th scope="col">Rank</th>
+      <th scope="col">Fname</th>
+      <th scope="col">Sname</th>
+      <th scope="col">Other</th>
+      <th scope="col">Label</th>
+      <th scope="col">Wiki</th>
+      <th scope="col">Comment</th>
+      <th scope="col">English Google Geocoding</th>
+      <th scope="col">English Translit</th>
+      <th scope="col">English GIZ</th>
+      <th scope="col">Russian OSM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @streets.each do |street|%>
+    <tr>
+      <th scope="row"><%= street.num %></th>
+      <td><%= street.scode %></td>
+      <td><%= street.street_type %></td>
+      <td><%= street.dictionary_name %></td>
+      <td><%= street.short_name %></td>
+      <td><%= street.rank %></td>
+      <td><%= street.fname %></td>
+      <td><%= street.sname %></td>
+      <td><%= street.other %></td>
+      <td><%= street.label %></td>
+      <td><%= street.wiki %></td>
+      <td><%= street.city %></td>
+      <td><%= street.grount %></td>
+      <td><%= street.comment %></td>
+      <td><%= street.english_google_geocoding %></td>
+      <td><%= street.english_translit %></td>
+      <td><%= street.russian_osm %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
