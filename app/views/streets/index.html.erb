@@ -44,7 +44,14 @@
               <td><%= street.sname %></td>
               <td><%= street.other %></td>
               <td><%= street.label %></td>
-              <td><%= street.wiki %></td>
+              <td>
+                <%= if street.wiki == nil
+                     ' '
+                    else
+                      link_to street.wiki
+                    end
+               %> 
+              </td>
               <td><%= street.city %></td>
               <td><%= street.grount %></td>
               <td><%= street.comment %></td>

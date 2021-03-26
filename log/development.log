@@ -6255,3 +6255,251 @@ Processing by StreetsController#index as HTML
 Completed 200 OK in 72ms (Views: 58.5ms | ActiveRecord: 10.8ms | Allocations: 69570)
 
 
+Started GET "/streets?q%5BstreetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont%5D=23.04.2004&commit=Search" for ::1 at 2021-03-26 18:56:51 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"streetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont"=>"23.04.2004"}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (11.2ms)[0m  [1m[34mSELECT "streets".* FROM "streets" WHERE ((((((((((((((("streets"."streetType" ILIKE '%23\.04\.2004%' OR "streets"."dictionaryName" ILIKE '%23\.04\.2004%') OR "streets"."shortName" ILIKE '%23\.04\.2004%') OR "streets"."rank" ILIKE '%23\.04\.2004%') OR "streets"."fname" ILIKE '%23\.04\.2004%') OR "streets"."sname" ILIKE '%23\.04\.2004%') OR "streets"."other" ILIKE '%23\.04\.2004%') OR "streets"."label" ILIKE '%23\.04\.2004%') OR "streets"."wiki" ILIKE '%23\.04\.2004%') OR "streets"."city" ILIKE '%23\.04\.2004%') OR "streets"."grount" ILIKE '%23\.04\.2004%') OR "streets"."comment" ILIKE '%23\.04\.2004%') OR "streets"."englishGoogleGeocoding" ILIKE '%23\.04\.2004%') OR "streets"."englishTranslit" ILIKE '%23\.04\.2004%') OR "streets"."englishGiz" ILIKE '%23\.04\.2004%') OR "streets"."russianOsm" ILIKE '%23\.04\.2004%')[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 57.2ms | Allocations: 61819)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.8ms | Allocations: 68282)
+Completed 200 OK in 69ms (Views: 54.6ms | ActiveRecord: 11.2ms | Allocations: 71006)
+
+
+Started GET "/streets?q%5BstreetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont%5D=%D0%B1%D0%B0%D0%BD&commit=Search" for ::1 at 2021-03-26 18:57:11 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"streetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont"=>"бан"}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (11.4ms)[0m  [1m[34mSELECT "streets".* FROM "streets" WHERE ((((((((((((((("streets"."streetType" ILIKE '%бан%' OR "streets"."dictionaryName" ILIKE '%бан%') OR "streets"."shortName" ILIKE '%бан%') OR "streets"."rank" ILIKE '%бан%') OR "streets"."fname" ILIKE '%бан%') OR "streets"."sname" ILIKE '%бан%') OR "streets"."other" ILIKE '%бан%') OR "streets"."label" ILIKE '%бан%') OR "streets"."wiki" ILIKE '%бан%') OR "streets"."city" ILIKE '%бан%') OR "streets"."grount" ILIKE '%бан%') OR "streets"."comment" ILIKE '%бан%') OR "streets"."englishGoogleGeocoding" ILIKE '%бан%') OR "streets"."englishTranslit" ILIKE '%бан%') OR "streets"."englishGiz" ILIKE '%бан%') OR "streets"."russianOsm" ILIKE '%бан%')[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 2323)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 8606)
+Completed 200 OK in 24ms (Views: 10.0ms | ActiveRecord: 11.4ms | Allocations: 10493)
+
+
+Started GET "/streets?q%5BstreetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont%5D=%D0%B1%D0%B0%D0%BD&commit=Search" for ::1 at 2021-03-26 19:02:55 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"streetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont"=>"бан"}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  Rendered streets/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 6013)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 6078)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 8657)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <%= search_form_for @q do |f| %>
+
+      <%= f.label "Search on any parameter" %>
+      <%= f.search_field :streetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont  %>
+
+        <%= f.submit %>
+      <% end %>
+      <!-- <div class="table-responsive"> -->
+        <table class="table text-truncate">
+          <thead>
+            <tr>
+              <th scope="col">№</th>
+              <th scope="col">Scode</th>
+              <th scope="col">Type</th>
+              <th scope="col">DictionaryName</th>
+              <th scope="col">ShortName</th>
+              <th scope="col">Rank</th>
+              <th scope="col">Fname</th>
+              <th scope="col">Sname</th>
+              <th scope="col">Other</th>
+              <th scope="col">Label</th>
+              <th scope="col">Wiki</th>
+              <th scope="col">City</th>
+              <th scope="col">Comment</th>
+              <th scope="col">English Google Geocoding</th>
+              <th scope="col">English Translit</th>
+              <th scope="col">English GIZ</th>
+              <th scope="col">Russian OSM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @streets.each do |street|%>
+            <tr>
+              <th scope="row"><%= street.num %></th>
+              <td><%= street.scode %></td>
+              <td><%= street.streetType %></td>
+              <td><%= street.dictionaryName %></td>
+              <td><%= street.shortName %></td>
+              <td><%= street.rank %></td>
+              <td><%= street.fname %></td>
+              <td><%= street.sname %></td>
+              <td><%= street.other %></td>
+              <td><%= street.label %></td>
+              <td><%= <%= link_to street.wiki %> </td>
+              <td><%= street.city %></td>
+              <td><%= street.grount %></td>
+              <td><%= street.comment %></td>
+              <td><%= street.englishGoogleGeocoding %></td>
+              <td><%= street.englishTranslit %></td>
+              <td><%= street.englishGiz %></td>
+              <td><%= street.russianOsm %></td>
+            </tr>
+            <% end %>
+         </tbody>
+        </table>
+      <!-- </div> -->
+    </div>
+  </div>
+</div>
+
+
+):
+1:    <div class="container">
+2:      <div class="row">
+3:        <div class="col-12">
+4:          <%= search_form_for @q do |f| %>
+5:    
+6:          <%= f.label "Search on any parameter" %>
+7:          <%= f.search_field :streetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont  %>
+8:    
+9:            <%= f.submit %>
+10:          <% end %>
+11:          <!-- <div class="table-responsive"> -->
+12:            <table class="table text-truncate">
+13:              <thead>
+14:                <tr>
+15:                  <th scope="col">№</th>
+16:                  <th scope="col">Scode</th>
+17:                  <th scope="col">Type</th>
+18:                  <th scope="col">DictionaryName</th>
+19:                  <th scope="col">ShortName</th>
+20:                  <th scope="col">Rank</th>
+21:                  <th scope="col">Fname</th>
+22:                  <th scope="col">Sname</th>
+23:                  <th scope="col">Other</th>
+24:                  <th scope="col">Label</th>
+25:                  <th scope="col">Wiki</th>
+26:                  <th scope="col">City</th>
+27:                  <th scope="col">Comment</th>
+28:                  <th scope="col">English Google Geocoding</th>
+29:                  <th scope="col">English Translit</th>
+30:                  <th scope="col">English GIZ</th>
+31:                  <th scope="col">Russian OSM</th>
+32:                </tr>
+33:              </thead>
+34:              <tbody>
+35:                <% @streets.each do |street|%>
+36:                <tr>
+37:                  <th scope="row"><%= street.num %></th>
+38:                  <td><%= street.scode %></td>
+39:                  <td><%= street.streetType %></td>
+40:                  <td><%= street.dictionaryName %></td>
+41:                  <td><%= street.shortName %></td>
+42:                  <td><%= street.rank %></td>
+43:                  <td><%= street.fname %></td>
+44:                  <td><%= street.sname %></td>
+45:                  <td><%= street.other %></td>
+46:                  <td><%= street.label %></td>
+47:                  <td><%= <%= link_to street.wiki %> </td>
+48:                  <td><%= street.city %></td>
+49:                  <td><%= street.grount %></td>
+50:                  <td><%= street.comment %></td>
+51:                  <td><%= street.englishGoogleGeocoding %></td>
+52:                  <td><%= street.englishTranslit %></td>
+53:                  <td><%= street.englishGiz %></td>
+54:                  <td><%= street.russianOsm %></td>
+55:                </tr>
+56:                <% end %>
+57:             </tbody>
+58:            </table>
+59:          <!-- </div> -->
+60:        </div>
+61:      </div>
+62:    </div>
+  
+app/views/streets/index.html.erb:47: syntax error, unexpected '<'
+app/views/streets/index.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/streets/index.html.erb:66: syntax error, unexpected `end', expecting ')'
+app/views/streets/index.html.erb:47: syntax error, unexpected '<'
+app/views/streets/index.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/streets/index.html.erb:66: syntax error, unexpected `end', expecting ')'
+app/views/streets/index.html.erb:47: syntax error, unexpected '<'
+app/views/streets/index.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/streets/index.html.erb:66: syntax error, unexpected `end', expecting ')'
+app/views/streets/index.html.erb:47: syntax error, unexpected '<'
+app/views/streets/index.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/streets/index.html.erb:66: syntax error, unexpected `end', expecting ')'
+app/views/streets/index.html.erb:47: syntax error, unexpected '<'
+app/views/streets/index.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/streets/index.html.erb:66: syntax error, unexpected `end', expecting ')'
+app/views/streets/index.html.erb:47: syntax error, unexpected '<'
+app/views/streets/index.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/streets/index.html.erb:66: syntax error, unexpected `end', expecting ')'
+Started GET "/streets?q%5BstreetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont%5D=%D0%B1%D0%B0%D0%BD&commit=Search" for ::1 at 2021-03-26 19:03:12 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"streetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont"=>"бан"}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (13.1ms)[0m  [1m[34mSELECT "streets".* FROM "streets" WHERE ((((((((((((((("streets"."streetType" ILIKE '%бан%' OR "streets"."dictionaryName" ILIKE '%бан%') OR "streets"."shortName" ILIKE '%бан%') OR "streets"."rank" ILIKE '%бан%') OR "streets"."fname" ILIKE '%бан%') OR "streets"."sname" ILIKE '%бан%') OR "streets"."other" ILIKE '%бан%') OR "streets"."label" ILIKE '%бан%') OR "streets"."wiki" ILIKE '%бан%') OR "streets"."city" ILIKE '%бан%') OR "streets"."grount" ILIKE '%бан%') OR "streets"."comment" ILIKE '%бан%') OR "streets"."englishGoogleGeocoding" ILIKE '%бан%') OR "streets"."englishTranslit" ILIKE '%бан%') OR "streets"."englishGiz" ILIKE '%бан%') OR "streets"."russianOsm" ILIKE '%бан%')[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 22.0ms | Allocations: 3815)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 10501)
+Completed 200 OK in 34ms (Views: 17.9ms | ActiveRecord: 13.1ms | Allocations: 13267)
+
+
+Started GET "/streets?q%5BstreetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont%5D=%D0%B1%D0%B0%D0%BD&commit=Search" for ::1 at 2021-03-26 19:04:43 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"streetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont"=>"бан"}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (11.8ms)[0m  [1m[34mSELECT "streets".* FROM "streets" WHERE ((((((((((((((("streets"."streetType" ILIKE '%бан%' OR "streets"."dictionaryName" ILIKE '%бан%') OR "streets"."shortName" ILIKE '%бан%') OR "streets"."rank" ILIKE '%бан%') OR "streets"."fname" ILIKE '%бан%') OR "streets"."sname" ILIKE '%бан%') OR "streets"."other" ILIKE '%бан%') OR "streets"."label" ILIKE '%бан%') OR "streets"."wiki" ILIKE '%бан%') OR "streets"."city" ILIKE '%бан%') OR "streets"."grount" ILIKE '%бан%') OR "streets"."comment" ILIKE '%бан%') OR "streets"."englishGoogleGeocoding" ILIKE '%бан%') OR "streets"."englishTranslit" ILIKE '%бан%') OR "streets"."englishGiz" ILIKE '%бан%') OR "streets"."russianOsm" ILIKE '%бан%')[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 3313)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 9770)
+Completed 200 OK in 27ms (Views: 12.3ms | ActiveRecord: 11.8ms | Allocations: 12371)
+
+
+Started GET "/streets?q%5BstreetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont%5D=&commit=Search" for ::1 at 2021-03-26 19:04:50 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"streetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont"=>""}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (2.3ms)[0m  [1m[34mSELECT "streets".* FROM "streets"[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 125.5ms | Allocations: 140685)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 132.1ms | Allocations: 147067)
+Completed 200 OK in 134ms (Views: 130.7ms | ActiveRecord: 2.3ms | Allocations: 147669)
+
+
+Started GET "/streets?q%5BstreetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont%5D=&commit=Search" for ::1 at 2021-03-26 19:05:11 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"streetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont"=>""}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (2.4ms)[0m  [1m[34mSELECT "streets".* FROM "streets"[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 124.8ms | Allocations: 80461)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 132.2ms | Allocations: 87030)
+Completed 200 OK in 135ms (Views: 130.8ms | ActiveRecord: 2.4ms | Allocations: 88345)
+
+
+Started GET "/streets?q%5BstreetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont%5D=&commit=Search" for ::1 at 2021-03-26 19:05:19 +0200
+Processing by StreetsController#index as HTML
+  Parameters: {"q"=>{"streetType_or_dictionaryName_or_shortName_or_rank_or_fname_or_sname_or_other_or_label_or_wiki_or_city_or_grount_or_comment_or_englishGoogleGeocoding_or_englishTranslit_or_englishGiz_or_russianOsm_cont"=>""}, "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering streets/index.html.erb within layouts/application
+  [1m[36mStreet Load (2.5ms)[0m  [1m[34mSELECT "streets".* FROM "streets"[0m
+  ↳ app/views/streets/index.html.erb:35
+  Rendered streets/index.html.erb within layouts/application (Duration: 63.3ms | Allocations: 80458)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70.7ms | Allocations: 86915)
+Completed 200 OK in 74ms (Views: 69.4ms | ActiveRecord: 2.5ms | Allocations: 88229)
+
+
